@@ -1,46 +1,60 @@
-# Hi, I'm Triasha Sarkar
+# Triasha Sarkar
 
-PhD Student | Aerospace Engineering @ Georgia Tech  
-Scientific ML • Surrogate Modeling • PINNs • 
-Optimization under Uncertainty  
-Atlanta, GA
-## What I Work On
+PhD student in Aerospace Engineering at Georgia Tech, 
+working on making simulations run faster without 
+sacrificing the physics that makes them useful.
 
-I build machine learning models that make engineering 
-simulations faster and smarter, sitting at the 
-intersection of aerospace physics and deep learning.
-
-| Area | What I Do |
-|------|-----------|
-| Surrogate Models | Replace expensive CFD/FEM runs with neural network approximations |
-| PINNs | Embed physical laws (PDEs) directly into ML training |
-| Reduced-Order Models | Compress high-dimensional simulation data |
-| Optimization under Uncertainty | Robust engineering decisions from noisy data |
-
-## Featured Projects
-> Surrogate-model-learning  
-> Neural network surrogate models for accelerating 
-> aerospace engineering simulations
-
-*(More coming soon — currently building out F1 
-telemetry ML analysis and PINN implementations)*
+Most of my work sits somewhere between traditional 
+numerical methods and machine learning — which means 
+I spend a lot of time explaining to CFD people why 
+neural networks aren't magic, and to ML people why 
+you can't just ignore the governing equations.
 
 ---
 
-## Tools & Stack
+## What I'm actually working on
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat&logo=tensorflow&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat&logo=numpy&logoColor=white)
+**Surrogate modeling** — training neural networks to 
+approximate expensive CFD/FEM simulations. The goal 
+is to get you 95% of the accuracy in 1% of the 
+compute time. Sometimes that works. Sometimes the 
+physics disagrees.
+
+**Physics-Informed Neural Networks (PINNs)** — instead 
+of feeding a network pure data, you bake the PDEs 
+directly into the loss function. It's a cleaner 
+approach and it doesn't need nearly as much labeled 
+data. Still figuring out when it beats classical 
+solvers and when it doesn't.
+
+**Reduced-Order Models** — high-dimensional simulation 
+data compressed into something a human (or an 
+optimizer) can actually reason about.
+
+**Optimization under uncertainty** — because real 
+engineering data is noisy and real decisions still 
+need to be made.
 
 ---
 
-## GitHub Stats
+## Projects
 
-![Triasha's GitHub stats](https://github-readme-stats.vercel.app/api?username=triasha72&show_icons=true&theme=dark)
+**[Surrogate-model-learning](https://github.com/triasha72/Surrogate-model-learning)**  
+My main repo right now. Neural network surrogates 
+for aerospace simulations — still building this out.
+
+More coming: F1 telemetry analysis with LSTM networks, 
+PINN implementations from scratch.
 
 ---
 
-**Reach me:** triasha72@gmail.com  
-**LinkedIn:** [triasha-sarkar](https://www.linkedin.com/in/triasha-sarkar)
+## Stack
+
+Python · PyTorch · TensorFlow · NumPy · scikit-learn · Jupyter
+
+---
+
+## Find me
+
+triasha72@gmail.com  
+[linkedin.com/in/triasha-sarkar](https://www.linkedin.com/in/triasha-sarkar)
