@@ -14,7 +14,7 @@ you can't just ignore the governing equations.
 
 ## What I'm actually working on
 
-**Surrogate modeling** — training neural networks to 
+**Surrogate modeling** : training neural networks to 
 approximate expensive CFD/FEM simulations. The goal 
 is to get you 95% of the accuracy in 1% of the 
 compute time. Sometimes that works. Sometimes the 
