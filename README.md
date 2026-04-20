@@ -26,7 +26,7 @@ control variate estimators, Gaussian process regression.
 
 **Operator learning and model reduction**
 When a surrogate maps from input parameters to full field
-solutions — geometry to B-field distribution, for example:
+solutions, geometry to B-field distribution, for example:
 it's learning an operator between function spaces. I'm
 studying how Operator Inference (OpInf) and projection-based
 model reduction give this a rigorous mathematical structure,
@@ -36,7 +36,7 @@ rather than treating it as a black-box regression problem.
 Instead of ignoring governing equations during training,
 physics-informed methods embed PDEs directly as constraints.
 I'm interested in when this improves generalization in the
-scarce data regime and when it doesn't — and why.
+scarce data regime and when it doesn't and why.
 
 **Gaussian process regression**
 The mathematical foundation of GP surrogates is covariance
