@@ -1,49 +1,70 @@
-# Triasha Sarkar
+## Hi, I'm Triasha
 
-PhD student in Aerospace Engineering at Georgia Tech’s Aerospace Systems Design Laboratory (ASDL), working across sustainable transportation systems, scientific machine learning, uncertainty quantification, and mobility resilience.
+I build machine learning models for engineering and scientific systems, and I test
+whether they can be trusted.
 
-My research connects engineering-scale modeling with transportation questions: how systems become cleaner, more resilient, and more useful for people and communities. I am especially interested in models that are not only predictive, but interpretable, uncertainty-aware, and useful for decision-making.
+MS in Aerospace Engineering from Georgia Tech (Aerospace Systems Design Laboratory).
+Previously eighteen months on airworthiness certification for the Rolls-Royce Trent
+XWB-84 EP, where a model being wrong was not an academic problem.
 
----
-
-## Research interests
-
-- Sustainable transportation systems
-- Mobility resilience and accessibility
-- Scientific machine learning
-- Surrogate modeling and multifidelity methods
-- Uncertainty quantification
-- Network disruption and digital twins
-- Emissions and lifecycle modeling
+Most of my work returns to the same question: when a model produces a number, what
+would have to be true for that number to mean anything?
 
 ---
 
-## Current projects
+### What I work on
 
-### Atlanta Mobility Resilience Digital Twin
-Independent prototype for modeling road-network disruption scenarios in Atlanta and comparing travel-time and accessibility outcomes. Current work focuses on baseline network resilience, stress-test scenarios, and future equity/accessibility layers for essential services.
+**Model validation** — leakage control, held-out protocols matched to data
+structure, and tests designed to fail when the pipeline is wrong.
 
-### NURBS_BEM_EMSolver
-Mesh-free NURBS-based boundary element solver for solenoid magnetic field computation. Generates multifidelity electromagnetic datasets for surrogate modeling, POD feasibility analysis, and operator-learning exploration.
+**Uncertainty quantification** — Gaussian processes, surrogate error
+characterisation, parametric uncertainty propagation.
 
-### Surrogate-model-learning
-Systematic study of surrogate methods from first principles, including Gaussian process regression, response surface methods, radial basis functions, uncertainty behavior, and failure modes of approximation.
+**Surrogate & reduced-order modeling** — multifidelity datasets, proper orthogonal
+decomposition, Operator Inference.
 
----
-
-## What I am building toward
-
-I am building a research profile at the intersection of transportation systems, scientific machine learning, and policy-relevant modeling. My goal is to develop models that can support sustainable and resilient transportation decision-making while remaining interpretable, uncertainty-aware, and grounded in real system behavior.
+**Data quality at scale** — finding the failures that pass every standard sanity
+check.
 
 ---
 
-## Technical stack
+### Selected repositories
 
-Python · NumPy · SciPy · scikit-learn · PyTorch · NetworkX · GeoPandas · OSMnx · Jupyter · Git · MATLAB
+**[Equity-Backtest](https://github.com/triasha72/Equity-Backtest)** — A monthly
+cross-sectional equity strategy built to a strict walk-forward protocol, published
+with its own negative result. Net Sharpe 0.25 (t = 0.81), rising only to 1.07 with
+costs set to zero. Every specification tested is logged and committed, including
+the one that looked best.
+
+**[NURBS_BEM_EMSolver](https://github.com/triasha72/NURBS_BEM_EMSolver)** — A
+mesh-free boundary element solver for solenoid magnetic fields on NURBS geometry,
+built from mathematical formulation through code, with parametric multifidelity
+datasets for surrogate modeling and Operator Inference.
+
+**[Surrogate-model-learning](https://github.com/triasha72/Surrogate-model-learning)** —
+Gaussian process, response surface and RBF surrogates compared across benchmark
+problems, focused on where each estimator breaks down rather than which one wins.
+
+**[atlanta-mobility-resilience-digital-twin](https://github.com/triasha72/atlanta-mobility-resilience-digital-twin)** —
+Road-network model of Atlanta from OpenStreetMap: disruption scenarios,
+origin–destination travel-time comparison, accessibility under stress.
 
 ---
 
-## Find me
+### Tools
 
-tsarkar34@gatech.edu  
-[LinkedIn](https://www.linkedin.com/in/triasha-sarkar)
+Python · pandas · NumPy · SciPy · scikit-learn · PyTorch · NetworkX · Git · pytest
+· MATLAB · C++
+
+---
+
+[Portfolio](https://triasha72.github.io/Portfolio) ·
+[LinkedIn](https://www.linkedin.com/in/triasha-sarkar) ·
+tsarkar34@gatech.edu
+
+---
+
+**How to use this file:** create a new public repository named exactly
+`triasha72` (same as your username), add this as `README.md`, and GitHub renders
+it at the top of your profile page. It's the first thing a recruiter sees when
+they click your GitHub link from a CV.
