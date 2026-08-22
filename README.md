@@ -1,102 +1,76 @@
 # Hi, I'm Triasha Sarkar
 
-### Machine Learning Engineer
+### Machine Learning Engineer | Search, Recommendation, GenAI Evaluation, and ML Systems
 
-I build reliable machine-learning systems for engineering and scientific problems, from model development and evaluation through deployment, observability, and failure analysis.
+I am an aerospace engineering MS graduate from Georgia Tech with prior machine learning experience at Rolls-Royce. I build ML systems that are useful beyond a notebook: the data and evaluation have to be sound, the service has to be deployable, and failures have to be visible.
 
-My work currently spans **agentic RAG**, **LLM adaptation and evaluation**, **multimodal VLM evaluation**, **time-series diagnostics**, **recommendation systems**, **scientific ML**, and **production-oriented ML systems**.
-
-My aerospace background strongly influences how I approach AI: model capability matters, but so do provenance, evaluation integrity, safe failure behavior, reproducibility, and knowing when a system should not make a claim.
+My recent work covers retrieval and ranking, recommender systems, RAG and multimodal evaluation, scientific ML, and on-device inference. I am currently targeting **Machine Learning Engineer**, **Applied ML/AI Engineer**, **Search or Recommendation Engineer**, and **GenAI Evaluation / ML Systems** roles.
 
 [Portfolio](https://triasha72.github.io/Portfolio/) ·
 [LinkedIn](https://www.linkedin.com/in/triasha-sarkar/) ·
+[Resume](https://triasha72.github.io/Portfolio/assets/Triasha_Sarkar_CV.pdf) ·
 [Email](mailto:tsarkar34@gatech.edu)
 
 ---
 
-## Selected Projects
+## Featured Projects
 
 ### [AeroRAG-X](https://github.com/triasha72/AeroRAG-X)
-**Agentic RAG · LLM Evaluation · ML Systems**
+**Retrieval · RAG evaluation · Agentic workflows · ML systems**
 
-Evaluation-first knowledge system over **3,233 citation-preserving NASA NTRS chunks**.
-
-- Built hybrid BM25 + dense retrieval, Reciprocal Rank Fusion, cross-encoder reranking, pgvector, evidence-sufficiency gating, and application-controlled citations.
-- Adapted Qwen3-0.6B with PEFT/LoRA and developed protected evaluation for answerability, grounded refusal, citation validity, evidence support, and semantic claim coverage.
-- Built a stateful LangGraph agent with schema-constrained planning, registered tool routing, bounded execution, checkpointing, human-in-the-loop review, fault injection, and safe failure handling.
-- Decomposed the system into Agent, Retrieval, and Inference FastAPI services with Docker Compose, PostgreSQL/pgvector, OpenTelemetry, Prometheus, retries, health/readiness checks, and safe degradation.
-- Developed TRL/GRPO grounded-agent experiment infrastructure with multi-objective rewards, anti-reward-hacking gates, leakage controls, and paired Base/LoRA/GRPO evaluation contracts.
-
----
-
-### [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval)
-**Multimodal AI · VLM Evaluation · Reliability Engineering**
-
-Human-aligned evaluation tooling for synthetic aerospace inspection imagery.
-
-- Designed a frozen **48-scenario** benchmark with a protected **36/12 development-test split**.
-- Materialized **48 deterministic synthetic assets** with generation metadata and SHA-256 provenance.
-- Built typed evaluation, annotation, prompt and response contracts with strict protected-test and metadata validation.
-- Integrated an optional local MLX-VLM development runner with exact asset/scenario/rubric binding.
-- Automated validation with Ruff, strict mypy, pytest and GitHub Actions.
-
----
+Built an evaluation-first technical knowledge system over 3,233 citation-preserving NASA report chunks. It combines hybrid retrieval, fusion, reranking, pgvector search, evidence checks, controlled citations, bounded agents, and containerized FastAPI services.
 
 ### [NewsLens](https://github.com/triasha72/NewsLens)
-**Recommender Systems · Production ML**
+**Recommendation · Ranking · Production ML**
 
-Leakage-aware recommendation and serving over Microsoft MIND-small.
-
-- Chronological train/validation evaluation with DuckDB and TF-IDF personalization.
-- Training-only popularity fallback recovered all content-model abstentions.
-- Final held-out results: **NDCG@10 0.3664**, **Recall@10 0.5955**, **Hit Rate@10 0.6762**.
-- FastAPI, non-root Docker/Compose, readiness/tracing/latency telemetry, multi-platform GHCR publishing, and **400+ tests**.
-
----
+Built a leakage-aware news recommender with chronological evaluation, TF-IDF personalization, a training-only fallback, and paired statistical comparison. The held-out system reached NDCG@10 of 0.3664 and is packaged with DuckDB, FastAPI, Docker, CI/CD, telemetry, and automated tests.
 
 ### [EdgeGenBench](https://github.com/triasha72/EdgeGenBench)
-**Scientific ML · Uncertainty · Efficient Inference**
+**Scientific ML · Uncertainty · On-device inference**
 
-Reproducible aircraft-design benchmark linking surrogate models to uncertainty-aware engineering decisions.
+Built an aircraft-design surrogate benchmark that connects uncertainty estimates and constrained optimization to deployment. Exported and tested models across ONNX, Core ML, and Qualcomm QNN; the QNN deployment retained 0.997 mean held-out R² on Snapdragon hardware.
 
-- Compared Ridge, Random Forest, and HistGradientBoosting surrogates on a **6,000-sample** deterministic benchmark.
-- Best model reached **0.9952 mean held-out R²**.
-- Added tree-quantile and split-conformal uncertainty plus a feasibility classifier with **99.89% ROC AUC** and **2.12% false-safe rate**.
-- Evaluated 20,000 optimization candidates, extracted 47 Pareto designs, and validated selected designs against the physics model.
-- Exported models to ONNX with equivalence tests; batch-1 surrogate latency improved from **13.795 ms to 0.305 ms**.
+### [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval)
+**Multimodal AI · VLM evaluation · Reproducibility**
+
+Built a fixed 48-scenario evaluation suite for synthetic aerospace inspection imagery. The framework uses deterministic assets, provenance checks, protected evaluation, annotation workflows, typed contracts, and a strictly validated MLX-VLM development runner.
+
+### More technical work
+
+- [Equity Backtest](https://github.com/triasha72/Equity-Backtest) — expanding-window signal evaluation with transaction costs and a complete record of tested specifications.
+- [Atlanta Mobility Resilience Digital Twin](https://github.com/triasha72/atlanta-mobility-resilience-digital-twin) — OSMnx and NetworkX simulation of how road disruptions change travel time, access, and equity across Atlanta.
+- [Surrogate Model Learning](https://github.com/triasha72/Surrogate-model-learning) — comparison of Gaussian process, response-surface, and radial-basis models, with emphasis on where each method fails.
 
 ---
 
 ## Experience
 
 ### Georgia Tech Aerospace Systems Design Laboratory
-**Graduate Research Assistant · May 2025 - Aug 2026**
+**Graduate Research Assistant under Prof. Dimitri Mavris · May 2025 – Aug 2026**
 
-- Built a leakage-resistant failure-detection workflow over **15,120 time-series thrust simulations**, achieving **96.8% accuracy / 0.986 ROC AUC** on unseen geometries.
-- Contributed to the **Delta Air Lines-sponsored HERO** project on source-aware retrieval for analyst-led safety and risk assessment.
-- Built a GREET lifecycle surrogate and integrated it with economic and transportation models for the **U.S. Endowment-sponsored GREEN TEA** project.
+- Audited a rocket-motor simulation study that was failing without errors or output, built a leakage-safe classifier with 96.8% accuracy across 15,120 simulations, and traced the failures to an uncapped convergence loop.
+- Worked on source-aware retrieval and evaluation for the Delta Air Lines-sponsored HERO safety program.
+- Built surrogate, uncertainty, demand, and life-cycle models for GREEN TEA and Project EAGLE; the GREEN TEA model remains in sponsor use.
 
-### Alten India, embedded at Rolls-Royce
-**Machine Learning Engineer · Oct 2023 - Apr 2025**
+### ALTEN India, embedded at Rolls-Royce
+**Machine Learning Engineer · Oct 2023 – Apr 2025**
 
-- Developed Python diagnostics, anomaly-detection and predictive-maintenance workflows for multivariate aircraft-engine sensor data.
-- Built Azure Databricks data pipelines and engineered 1 Hz / 10 Hz time-series features.
-- Worked with lifecycle engineers to validate failure modes and convert model signals into proactive maintenance insights.
+- Built Python workflows for diagnostics, anomaly detection, predictive maintenance, and mixed-frequency aircraft-engine time series.
+- Turned certification requirements into reproducible analyses and model checks, then reviewed the findings with lifecycle engineers.
 
----
+### Rolls-Royce DataLabs
+**Data Science Intern · May 2021 – Jul 2021**
 
-## Technical Stack
-
-**Languages & data:** Python, SQL/MySQL, C++, MATLAB, pandas, NumPy, SciPy, DuckDB, PostgreSQL/pgvector, Azure Blob Storage, Azure Databricks
-
-**GenAI & ML:** Hugging Face Transformers, PEFT/LoRA, TRL/GRPO, LangGraph, LangChain, RAG, BM25, dense retrieval, RRF, cross-encoder reranking, Sentence Transformers, PyTorch, TensorFlow, scikit-learn, MLX-LM/MLX-VLM
-
-**ML systems:** FastAPI, REST APIs, Docker/Compose, Google Cloud Run, GitHub Actions, Prometheus, OpenTelemetry, CI/CD, distributed tracing, health/readiness contracts, fault injection
-
-**Scientific ML & evaluation:** surrogate modeling, uncertainty quantification, conformal prediction, constrained optimization, physics validation, held-out evaluation, bootstrap analysis, failure analysis
+- Cleaned aircraft-engine sensor data, designed features, compared predictive and anomaly-detection models, and summarized recurring failure patterns for engineering review.
 
 ---
 
-## Current Focus
+## Technical Toolkit
 
-Reliable AI systems that combine **grounding, agentic tool use, model evaluation, failure recovery, multimodal evaluation, post-training experimentation, and reproducible deployment**.
+**Languages and data:** Python, SQL, C++, MATLAB, pandas, NumPy, SciPy, DuckDB, PostgreSQL/pgvector
+
+**ML and GenAI:** PyTorch, scikit-learn, Hugging Face Transformers, PEFT/LoRA, LangGraph, RAG, BM25, dense retrieval, reranking, recommender systems, uncertainty estimation
+
+**ML systems:** FastAPI, Docker/Compose, GitHub Actions, CI/CD, Prometheus, OpenTelemetry, ONNX, Core ML, Qualcomm QNN
+
+**Engineering practice:** leakage-aware evaluation, protected test design, bootstrap comparison, failure analysis, physics checks, reproducible experiments
