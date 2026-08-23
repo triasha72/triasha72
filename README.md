@@ -21,9 +21,9 @@ My recent work covers retrieval and ranking, recommender systems, RAG and multim
 Built an evaluation-first technical knowledge system over 3,233 citation-preserving NASA report chunks. It combines hybrid retrieval, fusion, reranking, pgvector search, evidence checks, controlled citations, bounded agents, and containerized FastAPI services.
 
 ### [NewsLens](https://github.com/triasha72/NewsLens)
-**Recommendation · Ranking · Production ML**
+**Recommendation · Real-time search · Distributed systems**
 
-Built a leakage-aware news recommender with chronological evaluation, TF-IDF personalization, a training-only fallback, and paired statistical comparison. The held-out system reached NDCG@10 of 0.3664 and is packaged with DuckDB, FastAPI, Docker, local Kubernetes evidence, telemetry, and automated tests.
+Built a leakage-aware news recommender with chronological evaluation, then added a separate real-time path so new articles could become searchable without tying event delivery to the model server. Go, Kafka, PostgreSQL, and FastAPI now handle keyed ingestion, idempotent writes, freshness-aware ranking, dead letters, and consumer recovery; the verified Docker run accepted all 500 events and reached a 79 ms sampled index-freshness p95.
 
 ### [EdgeGenBench](https://github.com/triasha72/EdgeGenBench)
 **Scientific ML · Uncertainty · On-device inference**
@@ -67,10 +67,10 @@ Built a fixed 48-scenario evaluation suite for synthetic aerospace inspection im
 
 ## Technical Toolkit
 
-**Languages and data:** Python, SQL, C++, MATLAB, pandas, NumPy, SciPy, DuckDB, PostgreSQL/pgvector
+**Languages and data:** Python, Go, SQL, C++, MATLAB, pandas, NumPy, SciPy, DuckDB, PostgreSQL/pgvector
 
 **ML and GenAI:** PyTorch, scikit-learn, Hugging Face Transformers, PEFT/LoRA, LangGraph, RAG, BM25, dense retrieval, reranking, recommender systems, uncertainty estimation
 
-**ML systems:** FastAPI, Docker/Compose, Kubernetes, GitHub Actions, CI/CD, Prometheus, OpenTelemetry, ONNX, Core ML, Qualcomm QNN
+**ML systems:** FastAPI, Kafka, Docker/Compose, Kubernetes, GitHub Actions, CI/CD, Prometheus, OpenTelemetry, ONNX, Core ML, Qualcomm QNN
 
 **Engineering practice:** leakage-aware evaluation, protected test design, bootstrap comparison, failure analysis, physics checks, reproducible experiments
