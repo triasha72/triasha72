@@ -23,17 +23,17 @@ Built an evaluation-first technical knowledge system over 3,233 citation-preserv
 ### [NewsLens](https://github.com/triasha72/NewsLens)
 **Recommendation · Ranking · Production ML**
 
-Built a leakage-aware news recommender with chronological evaluation, TF-IDF personalization, a training-only fallback, and paired statistical comparison. The held-out system reached NDCG@10 of 0.3664 and is packaged with DuckDB, FastAPI, Docker, CI/CD, telemetry, and automated tests.
+Built a leakage-aware news recommender with chronological evaluation, TF-IDF personalization, a training-only fallback, and paired statistical comparison. The held-out system reached NDCG@10 of 0.3664 and is packaged with DuckDB, FastAPI, Docker, local Kubernetes evidence, telemetry, and automated tests.
 
 ### [EdgeGenBench](https://github.com/triasha72/EdgeGenBench)
 **Scientific ML · Uncertainty · On-device inference**
 
-Built an aircraft-design surrogate benchmark that connects uncertainty estimates and constrained optimization to deployment. Exported and tested models across ONNX, Core ML, and Qualcomm QNN; the QNN deployment retained 0.997 mean held-out R² on Snapdragon hardware.
+Built an aircraft-design surrogate benchmark that connects uncertainty estimates and constrained optimization to deployment. Exported and tested models across ONNX, Core ML, and Qualcomm QNN, then added an installable iPhone browser app; the QNN deployment retained 0.997 mean held-out R² on Snapdragon hardware.
 
 ### [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval)
 **Multimodal AI · VLM evaluation · Reproducibility**
 
-Built a fixed 48-scenario evaluation suite for synthetic aerospace inspection imagery. The framework uses deterministic assets, provenance checks, protected evaluation, annotation workflows, typed contracts, and a strictly validated MLX-VLM development runner.
+Built a fixed 48-scenario evaluation suite for synthetic aerospace inspection imagery. A real free-GPU Kaggle batch attempted all 12 development cases with one Qwen2-VL session; eight passed the strict response schema, while four failures were retained for analysis rather than hidden.
 
 ### More technical work
 
@@ -71,6 +71,6 @@ Built a fixed 48-scenario evaluation suite for synthetic aerospace inspection im
 
 **ML and GenAI:** PyTorch, scikit-learn, Hugging Face Transformers, PEFT/LoRA, LangGraph, RAG, BM25, dense retrieval, reranking, recommender systems, uncertainty estimation
 
-**ML systems:** FastAPI, Docker/Compose, GitHub Actions, CI/CD, Prometheus, OpenTelemetry, ONNX, Core ML, Qualcomm QNN
+**ML systems:** FastAPI, Docker/Compose, Kubernetes, GitHub Actions, CI/CD, Prometheus, OpenTelemetry, ONNX, Core ML, Qualcomm QNN
 
 **Engineering practice:** leakage-aware evaluation, protected test design, bootstrap comparison, failure analysis, physics checks, reproducible experiments
