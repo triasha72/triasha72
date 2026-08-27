@@ -1,6 +1,6 @@
 # Hi, I'm Triasha Sarkar
 
-### Machine Learning Engineer | Retrieval, Evaluation, and Reliable ML Systems
+### Machine Learning Engineer
 
 I am an aerospace engineering MS graduate from Georgia Tech and a former Machine Learning Engineer at Rolls-Royce. I build ML systems that are useful beyond a notebook: the data and evaluation have to be sound, the service has to be deployable, and failures have to be visible.
 
