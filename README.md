@@ -2,7 +2,7 @@
 
 ### Machine Learning Engineer | Search, Recommendation, GenAI Evaluation, and ML Systems
 
-I am an aerospace engineering MS graduate from Georgia Tech with prior machine learning experience at Rolls-Royce. I build ML systems that are useful beyond a notebook: the data and evaluation have to be sound, the service has to be deployable, and failures have to be visible.
+I am an aerospace engineering MS graduate from Georgia Tech and a former Machine Learning Engineer at Rolls-Royce India. I build ML systems that are useful beyond a notebook: the data and evaluation have to be sound, the service has to be deployable, and failures have to be visible.
 
 My recent work covers retrieval and ranking, recommender systems, RAG and multimodal evaluation, scientific ML, and on-device inference. I am currently targeting **Machine Learning Engineer**, **Applied ML/AI Engineer**, **Search or Recommendation Engineer**, and **GenAI Evaluation / ML Systems** roles.
 
@@ -52,8 +52,8 @@ Built a fixed 48-scenario evaluation suite for synthetic aerospace inspection im
 - Worked on source-aware retrieval and evaluation for the Delta Air Lines-sponsored HERO safety program.
 - Built surrogate, uncertainty, demand, and life-cycle models for GREEN TEA and Project EAGLE; the GREEN TEA model remains in sponsor use.
 
-### ALTEN India, embedded at Rolls-Royce
-**Machine Learning Engineer · Oct 2023 – Apr 2025**
+### Rolls-Royce India
+**Machine Learning Engineer · Jul 2023 – Apr 2025**
 
 - Built Python workflows for diagnostics, anomaly detection, predictive maintenance, and mixed-frequency aircraft-engine time series.
 - Turned certification requirements into reproducible analyses and model checks, then reviewed the findings with lifecycle engineers.
