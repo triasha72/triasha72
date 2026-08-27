@@ -1,10 +1,12 @@
 # Hi, I'm Triasha Sarkar
 
-### Machine Learning Engineer | Search, Recommendation, GenAI Evaluation, and ML Systems
+### Machine Learning Engineer | Retrieval, Evaluation, and Reliable ML Systems
 
-I am an aerospace engineering MS graduate from Georgia Tech and a former Machine Learning Engineer at Rolls-Royce India. I build ML systems that are useful beyond a notebook: the data and evaluation have to be sound, the service has to be deployable, and failures have to be visible.
+I am an aerospace engineering MS graduate from Georgia Tech and a former Machine Learning Engineer at Rolls-Royce. I build ML systems that are useful beyond a notebook: the data and evaluation have to be sound, the service has to be deployable, and failures have to be visible.
 
-My recent work covers retrieval and ranking, recommender systems, RAG and multimodal evaluation, scientific ML, and on-device inference. I am currently targeting **Machine Learning Engineer**, **Applied ML/AI Engineer**, **Search or Recommendation Engineer**, and **GenAI Evaluation / ML Systems** roles.
+I entered Georgia Tech's Aerospace Engineering PhD program, transitioned to the MS, and completed the degree in August 2026. That path sharpened my focus on applied machine learning and engineering systems.
+
+My strongest work is in retrieval and ranking, ML evaluation, scientific ML, and deployment-focused engineering. I am targeting **Machine Learning Engineer**, **Applied ML Engineer**, and **Retrieval / Evaluation Engineer** roles.
 
 [Portfolio](https://triasha72.github.io/Portfolio/) ·
 [LinkedIn](https://www.linkedin.com/in/triasha-sarkar/) ·
@@ -30,13 +32,9 @@ Built a leakage-aware news recommender with chronological evaluation, then added
 
 Built an aircraft-design surrogate benchmark that connects uncertainty estimates and constrained optimization to deployment. Exported and tested models across ONNX, Core ML, and Qualcomm QNN, then added an installable iPhone browser app; the QNN deployment retained 0.997 mean held-out R² on Snapdragon hardware.
 
-### [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval)
-**Multimodal AI · VLM evaluation · Reproducibility**
-
-Built a fixed 48-scenario evaluation suite for synthetic aerospace inspection imagery. A real free-GPU Kaggle batch attempted all 12 development cases with one Qwen2-VL session; eight passed the strict response schema, while four failures were retained for analysis rather than hidden.
-
 ### More technical work
 
+- [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval) — protected multimodal evaluation with deterministic assets, provenance checks, and retained failures.
 - [Equity Backtest](https://github.com/triasha72/Equity-Backtest) — expanding-window signal evaluation with transaction costs and a complete record of tested specifications.
 - [Atlanta Mobility Resilience Digital Twin](https://github.com/triasha72/atlanta-mobility-resilience-digital-twin) — OSMnx and NetworkX simulation of how road disruptions change travel time, access, and equity across Atlanta.
 - [Surrogate Model Learning](https://github.com/triasha72/Surrogate-model-learning) — comparison of Gaussian process, response-surface, and radial-basis models, with emphasis on where each method fails.
@@ -52,7 +50,7 @@ Built a fixed 48-scenario evaluation suite for synthetic aerospace inspection im
 - Worked on source-aware retrieval and evaluation for the Delta Air Lines-sponsored HERO safety program.
 - Built surrogate, uncertainty, demand, and life-cycle models for GREEN TEA and Project EAGLE; the GREEN TEA model remains in sponsor use.
 
-### Rolls-Royce India
+### Rolls-Royce
 **Machine Learning Engineer · Jul 2023 – Apr 2025**
 
 - Built Python workflows for diagnostics, anomaly detection, predictive maintenance, and mixed-frequency aircraft-engine time series.
