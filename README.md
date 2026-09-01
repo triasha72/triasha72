@@ -30,14 +30,15 @@ Built a leakage-aware news recommender with chronological evaluation, then added
 ### [EdgeGenBench](https://github.com/triasha72/EdgeGenBench)
 **Scientific ML · Uncertainty · On-device inference**
 
-Built an aircraft-design surrogate benchmark that connects uncertainty estimates and constrained optimization to deployment. Exported and tested models across ONNX, Core ML, and Qualcomm QNN, then added an installable iPhone browser app; the QNN deployment retained 0.997 mean held-out R² on Snapdragon hardware.
+Built a real-flight anomaly track on NASA DASHlink data alongside a separately labeled generated aircraft-design deployment benchmark. The recorded-flight model reached 0.7380 macro F1 on 17,780 aircraft-disjoint approaches and stayed blocked by its release gates; ONNX consistency remained above 99.55% under tested sensor corruptions.
 
 ### More technical work
 
-- [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval) — protected multimodal evaluation with deterministic assets, provenance checks, and retained failures.
-- [Equity Backtest](https://github.com/triasha72/Equity-Backtest) — expanding-window signal evaluation with transaction costs and a complete record of tested specifications.
-- [Atlanta Mobility Resilience Digital Twin](https://github.com/triasha72/atlanta-mobility-resilience-digital-twin) — OSMnx and NetworkX simulation of how road disruptions change travel time, access, and equity across Atlanta.
-- [Surrogate Model Learning](https://github.com/triasha72/Surrogate-model-learning) — comparison of Gaussian process, response-surface, and radial-basis models, with emphasis on where each method fails.
+- [IntegrityBench](https://github.com/triasha72/IntegrityBench) — Civil Comments moderation candidate with safety thresholds, a fail-closed API, human-review routing, model registry, shadow comparison, rollback, and an intentionally blocked release.
+- [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval) — public AGDD real-image transfer study where mixed training improved macro F1 but reduced crack recall, so the augmentation was not called a safety win.
+- [Equity Backtest](https://github.com/triasha72/Equity-Backtest) — expanding-window signal evaluation with real prices, transaction costs, a complete variant log, and an explicit survivorship-bias boundary.
+- [Atlanta Mobility Resilience Digital Twin](https://github.com/triasha72/atlanta-mobility-resilience-digital-twin) — checksummed public OpenStreetMap disruption simulation; the first 672-node downtown run remains clearly bounded as free-flow routing over illustrative OD points, not observed traffic or an equity result.
+- [Surrogate Model Learning](https://github.com/triasha72/Surrogate-model-learning) — public UCI airfoil and building experiments with grouped splits, seed sensitivity, conformal coverage, and an extrapolation guard.
 
 ---
 
