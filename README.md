@@ -22,6 +22,8 @@ My strongest work is in retrieval and ranking, ML evaluation, scientific ML, and
 
 Built an evaluation-first technical knowledge system over 3,233 citation-preserving NASA report chunks. It combines hybrid retrieval, fusion, reranking, pgvector search, evidence checks, controlled citations, bounded agents, and containerized FastAPI services.
 
+The external QASPER track evaluates a frozen within-paper TF-IDF baseline on 888 answerable questions with human-selected evidence. It reaches 76.24% any-evidence recall@10. QASPER covers NLP papers, so I treat this as retrieval evidence rather than NASA-domain or answer-generation validation.
+
 ### [NewsLens](https://github.com/triasha72/NewsLens)
 **Recommendation · Real-time search · Distributed systems**
 
@@ -34,11 +36,11 @@ Built a real-flight anomaly track on NASA DASHlink data alongside a separately l
 
 ### More technical work
 
-- [IntegrityBench](https://github.com/triasha72/IntegrityBench) — Civil Comments moderation candidate with safety thresholds, a fail-closed API, human-review routing, model registry, shadow comparison, rollback, and an intentionally blocked release.
-- [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval) — public AGDD real-image transfer study where mixed training improved macro F1 but reduced crack recall, so the augmentation was not called a safety win.
+- [IntegrityBench](https://github.com/triasha72/IntegrityBench) — Civil Comments moderation candidate whose false acceptance rose to 59.32% on 2,802 human-annotated ToxicChat prompts; the failed transfer test keeps the release blocked.
+- [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval) — public AGDD real-image transfer study plus 1,735 GenAI-Bench human preference votes for general image-evaluator development. Neither track is presented as operational aircraft-inspection evidence.
 - [Equity Backtest](https://github.com/triasha72/Equity-Backtest) — expanding-window signal evaluation with real prices, transaction costs, a complete variant log, and an explicit survivorship-bias boundary.
-- [Atlanta Mobility Resilience Digital Twin](https://github.com/triasha72/atlanta-mobility-resilience-digital-twin) — checksummed public OpenStreetMap disruption simulation; the first 672-node downtown run remains clearly bounded as free-flow routing over illustrative OD points, not observed traffic or an equity result.
-- [Surrogate Model Learning](https://github.com/triasha72/Surrogate-model-learning) — public UCI airfoil and building experiments with grouped splits, seed sensitivity, conformal coverage, and an extrapolation guard.
+- [Atlanta Mobility Resilience Digital Twin](https://github.com/triasha72/atlanta-mobility-resilience-digital-twin) — checksummed OpenStreetMap disruption simulation with 50 Census tract origins from 2024 ACS estimates, representing an estimated 216,659 residents. Destinations and observed traffic calibration remain open.
+- [Surrogate Model Learning](https://github.com/triasha72/Surrogate-model-learning) — public UCI airfoil and building experiments with grouped splits, seed sensitivity, conformal coverage, and an extrapolation guard. A normalized conformal diagnostic improved building-load coverage to 87.93% and 87.07%, still below its 90% target and still awaiting confirmation on untouched data.
 
 ---
 
