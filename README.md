@@ -6,7 +6,7 @@ I am an aerospace engineering MS graduate from Georgia Tech and a former Machine
 
 I entered Georgia Tech's Aerospace Engineering PhD program, transitioned to the MS, and completed the degree in August 2026. That path sharpened my focus on applied machine learning and engineering systems.
 
-My strongest work is in retrieval and ranking, ML evaluation, scientific ML, and deployment-focused engineering. I am targeting **Machine Learning Engineer**, **Applied ML Engineer**, and **Retrieval / Evaluation Engineer** roles.
+I bring experience across scientific ML, retrieval and ranking, ML evaluation, time-series modelling, and deployment-focused engineering. My aerospace background adds depth in simulation, physical context, uncertainty, and engineering decision-making. I am targeting **Machine Learning Engineer** and **Applied ML Engineer** roles.
 
 [Portfolio](https://triasha72.github.io/Portfolio/) ·
 [LinkedIn](https://www.linkedin.com/in/triasha-sarkar/) ·
@@ -17,22 +17,29 @@ My strongest work is in retrieval and ranking, ML evaluation, scientific ML, and
 
 ## Featured Projects
 
-### [AeroRAG-X](https://github.com/triasha72/AeroRAG-X)
-**Retrieval · RAG evaluation · Agentic workflows · ML systems**
+### [AIRFAANS](https://github.com/triasha72/AIRFAANS)
+**Scientific ML · CFD surrogates · Graph neural networks · Uncertainty**
 
-Built an evaluation-first technical knowledge system over 3,233 citation-preserving NASA report chunks. It combines hybrid retrieval, fusion, reranking, pgvector search, evidence checks, controlled citations, bounded agents, and containerized FastAPI services.
+Built a geometry-aware study of aerodynamic CFD surrogates using official AirfRANS meshes. It compares a pointwise MLP, a MeshGraphNet-style GNN, and a compact point neural operator with simulation-level splits, train-only normalization, and force verification.
 
-The external evidence track now covers QASPER and SciFact human annotations. SciFact reaches 89.89% evidence-document recall@10. I also audited 20,283 TREC RAG relevance judgments and 2,840 citation-support judgments, then verified that the NASA provenance guard rejects 200/200 deliberately wrong source IDs. The manual 50-case aerospace audit is still pending.
+Across three matched seeds and all 200 official interpolation test meshes, MeshGraphNet had the lowest mean error for the four predicted flow fields and drag; the point operator had the lowest mean lift error. Reynolds/AoA OOD, uncertainty, and active-learning studies remain pending, so the project is not presented as operationally ready.
 
-### [NewsLens](https://github.com/triasha72/NewsLens)
-**Recommendation · Real-time search · Distributed systems**
+### [Surrogate Model Learning](https://github.com/triasha72/Surrogate-model-learning)
+**Engineering data · Reliability · Uncertainty quantification · Distribution shift**
 
-Built a leakage-aware news recommender with chronological evaluation, then added a separate real-time path so new articles could become searchable without tying event delivery to the model server. Go, Kafka, PostgreSQL, and FastAPI now handle keyed ingestion, idempotent writes, freshness-aware ranking, dead letters, and consumer recovery; the verified Docker run accepted all 500 events and reached a 79 ms sampled index-freshness p95.
+Built public engineering-data studies using grouped splits, Gaussian processes and conventional surrogates, multi-seed robustness analysis, split-conformal intervals, and distance-to-training-domain guards.
+
+An airfoil Gaussian process reached R² 0.8145 on a physically grouped split; the 10-seed mean of 0.8662 ± 0.0680 showed material split sensitivity. Nominal 90% intervals did not retain 90% coverage after design shift, an explicit finding that shaped the evaluation approach.
 
 ### [EdgeGenBench](https://github.com/triasha72/EdgeGenBench)
 **Scientific ML · Uncertainty · On-device inference**
 
 Built a real-flight anomaly track on NASA DASHlink data alongside a separately labeled generated aircraft-design deployment benchmark. The recorded-flight model reached 0.7380 macro F1 on 17,780 aircraft-disjoint approaches and stayed blocked by its release gates; ONNX consistency remained above 99.55% under tested sensor corruptions.
+
+### [NewsLens](https://github.com/triasha72/NewsLens)
+**Recommendation · Real-time search · Distributed systems**
+
+Built a leakage-aware news recommender with chronological evaluation, then added a separate real-time path so new articles could become searchable without tying event delivery to the model server. Go, Kafka, PostgreSQL, and FastAPI now handle keyed ingestion, idempotent writes, freshness-aware ranking, dead letters, and consumer recovery; the verified Docker run accepted all 500 events and reached a 79 ms sampled index-freshness p95.
 
 ### More technical work
 
@@ -40,7 +47,7 @@ Built a real-flight anomaly track on NASA DASHlink data alongside a separately l
 - [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval) — AGDD real-image transfer study plus 1,735 GenAI-Bench preference votes. The next DLR track is a verified MIT release with 6,000+ labelled aircraft-dent images; training is pending archive and split audit.
 - [Equity Backtest](https://github.com/triasha72/Equity-Backtest) — expanding-window signal evaluation with real prices, turnover costs, a liquidity-based participation-cap stress test, a complete variant log, and an explicit survivorship-bias boundary.
 - [Atlanta Mobility Resilience Digital Twin](https://github.com/triasha72/atlanta-mobility-resilience-digital-twin) — checksummed OpenStreetMap disruption simulation with 50 Census tract origins from 2024 ACS estimates, representing an estimated 216,659 residents. MARTA's public GTFS schedule is audited; road-plus-transit routing and observed travel calibration remain open.
-- [Surrogate Model Learning](https://github.com/triasha72/Surrogate-model-learning) — public UCI airfoil, building, and concrete experiments with grouped splits, seed sensitivity, conformal coverage, and an extrapolation guard. A high-age concrete tail did not trigger the guard more often, so its limits are reported directly.
+- [AeroRAG-X](https://github.com/triasha72/AeroRAG-X) — evaluation-first technical retrieval over 3,233 NASA report chunks, with hybrid retrieval, reranking, evidence checks, controlled citations, and containerized services. The manual 50-case aerospace audit is still pending.
 
 ---
 
@@ -70,7 +77,7 @@ Built a real-flight anomaly track on NASA DASHlink data alongside a separately l
 
 **Languages and data:** Python, Go, SQL, C++, MATLAB, pandas, NumPy, SciPy, DuckDB, PostgreSQL/pgvector
 
-**ML and GenAI:** PyTorch, scikit-learn, Hugging Face Transformers, PEFT/LoRA, LangGraph, RAG, BM25, dense retrieval, reranking, recommender systems, uncertainty estimation
+**ML and scientific ML:** PyTorch, PyTorch Geometric, scikit-learn, graph neural networks, neural operators, surrogate modeling, uncertainty quantification, Hugging Face Transformers, RAG, BM25, dense retrieval, reranking, recommender systems
 
 **ML systems:** FastAPI, Kafka, Docker/Compose, Kubernetes, GitHub Actions, CI/CD, Prometheus, OpenTelemetry, ONNX, Core ML, Qualcomm QNN
 
