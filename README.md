@@ -36,11 +36,11 @@ Built a real-flight anomaly track on NASA DASHlink data alongside a separately l
 
 ### More technical work
 
-- [IntegrityBench](https://github.com/triasha72/IntegrityBench) — three-way Civil Comments moderator remains blocked after 59.32% false acceptance on 2,802 human-annotated ToxicChat prompts. A separate 99,718-pair BeaverTails run cuts false acceptance to 18.79% but raises false rejection to 16.43% and has no escalation class.
+- [IntegrityBench](https://github.com/triasha72/IntegrityBench) — every candidate remains blocked. A 20,000-row mixed conversational experiment reaches 2.29% false acceptance on Civil Comments but 9.60% on 2,802 human-annotated ToxicChat prompts, making the shift gap explicit.
 - [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval) — AGDD real-image transfer study plus 1,735 GenAI-Bench preference votes. The next DLR track is a verified MIT release with 6,000+ labelled aircraft-dent images; training is pending archive and split audit.
-- [Equity Backtest](https://github.com/triasha72/Equity-Backtest) — expanding-window signal evaluation with real prices, transaction costs, a complete variant log, and an explicit survivorship-bias boundary.
-- [Atlanta Mobility Resilience Digital Twin](https://github.com/triasha72/atlanta-mobility-resilience-digital-twin) — checksummed OpenStreetMap disruption simulation with 50 Census tract origins from 2024 ACS estimates, representing an estimated 216,659 residents. Destinations and observed traffic calibration remain open.
-- [Surrogate Model Learning](https://github.com/triasha72/Surrogate-model-learning) — public UCI airfoil and building experiments with grouped splits, seed sensitivity, conformal coverage, and an extrapolation guard. A normalized conformal diagnostic improved building-load coverage to 87.93% and 87.07%, still below its 90% target and still awaiting confirmation on untouched data.
+- [Equity Backtest](https://github.com/triasha72/Equity-Backtest) — expanding-window signal evaluation with real prices, turnover costs, a liquidity-based participation-cap stress test, a complete variant log, and an explicit survivorship-bias boundary.
+- [Atlanta Mobility Resilience Digital Twin](https://github.com/triasha72/atlanta-mobility-resilience-digital-twin) — checksummed OpenStreetMap disruption simulation with 50 Census tract origins from 2024 ACS estimates, representing an estimated 216,659 residents. MARTA's public GTFS schedule is audited; road-plus-transit routing and observed travel calibration remain open.
+- [Surrogate Model Learning](https://github.com/triasha72/Surrogate-model-learning) — public UCI airfoil, building, and concrete experiments with grouped splits, seed sensitivity, conformal coverage, and an extrapolation guard. A high-age concrete tail did not trigger the guard more often, so its limits are reported directly.
 
 ---
 
