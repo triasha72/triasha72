@@ -2,11 +2,11 @@
 
 ### Machine Learning Engineer
 
-I am an aerospace engineering MS graduate from Georgia Tech and a former Machine Learning Engineer at Rolls-Royce. I build ML systems that are useful beyond a notebook: the data and evaluation have to be sound, the service has to be deployable, and failures have to be visible.
+I am an aerospace engineering MS graduate from Georgia Tech and a former Machine Learning Engineer at Rolls-Royce.
 
 I entered Georgia Tech's Aerospace Engineering PhD program, transitioned to the MS, and completed the degree in August 2026. That path sharpened my focus on applied machine learning and engineering systems.
 
-I bring experience across scientific ML, retrieval and ranking, ML evaluation, time-series modelling, and deployment-focused engineering. My aerospace background adds depth in simulation, physical context, uncertainty, and engineering decision-making. I am targeting **Machine Learning Engineer** and **Applied ML Engineer** roles.
+My work covers scientific ML, model evaluation, retrieval, time-series data, and ML systems. My aerospace background gave me experience with simulation, uncertainty, and engineering problems. I am targeting **Machine Learning Engineer** and **Applied ML Engineer** roles.
 
 [Portfolio](https://triasha72.github.io/Portfolio/) ·
 [LinkedIn](https://www.linkedin.com/in/triasha-sarkar/) ·
