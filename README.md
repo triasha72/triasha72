@@ -43,8 +43,8 @@ Built a leakage-aware news recommender with chronological evaluation, then added
 
 ### More technical work
 
-- [IntegrityBench](https://github.com/triasha72/IntegrityBench) — every candidate remains blocked. A 20,000-row mixed conversational experiment reaches 2.29% false acceptance on Civil Comments but 9.60% on 2,802 human-annotated ToxicChat prompts, making the shift gap explicit.
-- [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval) — AGDD real-image transfer study plus 1,735 GenAI-Bench preference votes. The next DLR track is a verified MIT release with 6,000+ labelled aircraft-dent images; training is pending archive and split audit.
+- [IntegrityBench](https://github.com/triasha72/IntegrityBench) — every candidate remains blocked. A thresholded Civil Comments candidate reached 1.84% false acceptance on 97,320 held-out rows, but the frozen three-way candidate falsely allowed 59.32% of 2,802 human-annotated ToxicChat prompts.
+- [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval) — AGDD real-image transfer study plus 1,735 GenAI-Bench preference votes. A separate 3,224-image DLR aircraft-dent track reached 0.9777 dent recall on a 645-image test but only 0.5969 ROC-AUC because of false alarms; it remains a baseline.
 - [Equity Backtest](https://github.com/triasha72/Equity-Backtest) — expanding-window signal evaluation with real prices, turnover costs, a liquidity-based participation-cap stress test, a complete variant log, and an explicit survivorship-bias boundary.
 - [Atlanta Mobility Resilience Digital Twin](https://github.com/triasha72/atlanta-mobility-resilience-digital-twin) — checksummed OpenStreetMap disruption simulation with 50 Census tract origins from 2024 ACS estimates, representing an estimated 216,659 residents. MARTA's public GTFS schedule is audited; road-plus-transit routing and observed travel calibration remain open.
 - [AeroRAG-X](https://github.com/triasha72/AeroRAG-X) — evaluation-first technical retrieval over 3,233 NASA report chunks, with hybrid retrieval, reranking, evidence checks, controlled citations, and containerized services. The manual 50-case aerospace audit is still pending.
