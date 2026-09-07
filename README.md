@@ -18,7 +18,7 @@ My work covers scientific ML, model evaluation, retrieval, time-series data, and
 ## Featured Projects
 
 ### [AIRFAANS](https://github.com/triasha72/AIRFAANS)
-**Scientific ML · CFD surrogates · Graph neural networks · Uncertainty**
+**Scientific ML · CFD surrogates · Graph neural networks · Uncertainty · Jan 2026 – Apr 2026**
 
 Built a geometry-aware study of aerodynamic CFD surrogates using official AirfRANS meshes. It compares a pointwise MLP, a MeshGraphNet-style GNN, and a compact point neural operator with simulation-level splits, train-only normalization, and force verification.
 
