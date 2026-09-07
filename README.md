@@ -22,7 +22,7 @@ My strongest work is in retrieval and ranking, ML evaluation, scientific ML, and
 
 Built an evaluation-first technical knowledge system over 3,233 citation-preserving NASA report chunks. It combines hybrid retrieval, fusion, reranking, pgvector search, evidence checks, controlled citations, bounded agents, and containerized FastAPI services.
 
-The external QASPER track evaluates a frozen within-paper TF-IDF baseline on 888 answerable questions with human-selected evidence. It reaches 76.24% any-evidence recall@10. QASPER covers NLP papers, so I treat this as retrieval evidence rather than NASA-domain or answer-generation validation.
+The external evidence track now covers QASPER and SciFact human annotations. SciFact reaches 89.89% evidence-document recall@10. I also audited 20,283 TREC RAG relevance judgments and 2,840 citation-support judgments, then verified that the NASA provenance guard rejects 200/200 deliberately wrong source IDs. The manual 50-case aerospace audit is still pending.
 
 ### [NewsLens](https://github.com/triasha72/NewsLens)
 **Recommendation · Real-time search · Distributed systems**
