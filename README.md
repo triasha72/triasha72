@@ -15,6 +15,14 @@ My work covers scientific ML, model evaluation, retrieval, time-series data, and
 
 ---
 
+## Start with the work closest to your role
+
+- **Applied ML:** NewsLens for recommendation and release controls; AeroSynth-Eval for evaluation and controlled augmentation experiments.
+- **Scientific ML:** AIRFAANS for CFD surrogates; Surrogate Model Learning for grouped regression, uncertainty and screening decisions.
+- **ML engineering:** NewsLens for ingestion and model lifecycle; EdgeGenBench for export and iOS instrumentation; Equity Backtest for temporal evaluation and accounting.
+
+Recent implementations add model promotion/rollback, an iOS bundled-model test, a matched augmentation runner, OLS/ridge diagnostics, and backtest accounting corrections. Physical iPhone measurements, a real downstream augmentation study and survivorship-complete backtest results remain pending. These additions are independent project work.
+
 ## Featured Projects
 
 ### [AIRFAANS](https://github.com/triasha72/AIRFAANS)
