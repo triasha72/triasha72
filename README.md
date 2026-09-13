@@ -1,4 +1,4 @@
-# Hi, I'm Triasha Sarkar
+# Triasha Sarkar
 
 ### Machine Learning Engineer
 
@@ -10,20 +10,20 @@ My work covers scientific ML, model evaluation, retrieval, time-series data, and
 
 [Portfolio](https://triasha72.github.io/Portfolio/) ·
 [LinkedIn](https://www.linkedin.com/in/triasha-sarkar/) ·
-[Resume](https://triasha72.github.io/Portfolio/assets/Triasha_Sarkar_One_Page_ML_Resume.pdf) ·
+[Resume](https://triasha72.github.io/Portfolio/assets/Triasha_Sarkar_CV.pdf) ·
 [Email](mailto:tsarkar34@gatech.edu)
 
 ---
 
-## Start with the work closest to your role
+## Projects
 
-- **Applied ML:** NewsLens for recommendation and release controls; AeroSynth-Eval for evaluation and controlled augmentation experiments.
-- **Scientific ML:** AIRFAANS for CFD surrogates; Surrogate Model Learning for grouped regression, uncertainty and screening decisions.
-- **ML engineering:** NewsLens for ingestion and model lifecycle; EdgeGenBench for export and iOS instrumentation; Equity Backtest for temporal evaluation and accounting.
+- Applied ML: NewsLens and AeroSynth-Eval.
+- Scientific ML: AIRFAANS and Surrogate Model Learning.
+- ML engineering: NewsLens, EdgeGenBench, and Equity Backtest.
 
-Recent implementations add model promotion/rollback, an iOS bundled-model test, a matched augmentation runner, OLS/ridge diagnostics, and backtest accounting corrections. Physical iPhone measurements, a real downstream augmentation study and survivorship-complete backtest results remain pending. These additions are independent project work.
+The repositories include the measured results, the code used to produce them, and the work that is still in progress.
 
-## Featured Projects
+## Project details
 
 ### [AIRFAANS](https://github.com/triasha72/AIRFAANS)
 **Scientific ML · CFD surrogates · Graph neural networks · Uncertainty · Jan 2026 – Apr 2026**
@@ -49,7 +49,7 @@ Built a real-flight anomaly track on NASA DASHlink data alongside a separately l
 
 Built a leakage-aware news recommender with chronological evaluation, then added a separate real-time path so new articles could become searchable without tying event delivery to the model server. Go, Kafka, PostgreSQL, and FastAPI now handle keyed ingestion, idempotent writes, freshness-aware ranking, dead letters, and consumer recovery; the verified Docker run accepted all 500 events and reached a 79 ms sampled index-freshness p95. An opt-in synthetic, in-memory demo mode supports safe local exploration without licensed data or a database connection; it is not a hosted deployment.
 
-### More technical work
+### Other projects
 
 - [IntegrityBench](https://github.com/triasha72/IntegrityBench) — every candidate remains blocked. A thresholded Civil Comments candidate reached 1.84% false acceptance on 97,320 held-out rows, but the frozen three-way candidate falsely allowed 59.32% of 2,802 human-annotated ToxicChat prompts.
 - [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval) — AGDD real-image transfer study plus 1,735 GenAI-Bench preference votes. A separate 3,224-image DLR aircraft-dent track reached 0.9777 dent recall on a 645-image test but only 0.5969 ROC-AUC because of false alarms; it remains a baseline.
