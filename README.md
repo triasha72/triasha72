@@ -30,7 +30,7 @@ Recent implementations add model promotion/rollback, an iOS bundled-model test, 
 
 Built a geometry-aware study of aerodynamic CFD surrogates using official AirfRANS meshes. It compares a pointwise MLP, a MeshGraphNet-style GNN, and a compact point neural operator with simulation-level splits, train-only normalization, and force verification.
 
-Across three matched seeds and all 200 official interpolation test meshes, MeshGraphNet had the lowest mean error for the four predicted flow fields and drag; the point operator had the lowest mean lift error. Reynolds/AoA OOD, uncertainty, and active-learning studies remain pending, so the project is not presented as operationally ready.
+Across three matched seeds and all 200 official interpolation test meshes, MeshGraphNet had the lowest mean error for the four predicted flow fields and drag; the point operator had the lowest mean lift error. Reynolds/AoA OOD, uncertainty, and active-learning studies are in progress; no results are reported until the matched runs finish, so the project is not presented as operationally ready.
 
 ### [Surrogate Model Learning](https://github.com/triasha72/Surrogate-model-learning)
 **Engineering data · Reliability · Uncertainty quantification · Distribution shift**
@@ -47,14 +47,14 @@ Built a real-flight anomaly track on NASA DASHlink data alongside a separately l
 ### [NewsLens](https://github.com/triasha72/NewsLens)
 **Recommendation · Real-time search · Distributed systems**
 
-Built a leakage-aware news recommender with chronological evaluation, then added a separate real-time path so new articles could become searchable without tying event delivery to the model server. Go, Kafka, PostgreSQL, and FastAPI now handle keyed ingestion, idempotent writes, freshness-aware ranking, dead letters, and consumer recovery; the verified Docker run accepted all 500 events and reached a 79 ms sampled index-freshness p95.
+Built a leakage-aware news recommender with chronological evaluation, then added a separate real-time path so new articles could become searchable without tying event delivery to the model server. Go, Kafka, PostgreSQL, and FastAPI now handle keyed ingestion, idempotent writes, freshness-aware ranking, dead letters, and consumer recovery; the verified Docker run accepted all 500 events and reached a 79 ms sampled index-freshness p95. An opt-in synthetic, in-memory demo mode supports safe local exploration without licensed data or a database connection; it is not a hosted deployment.
 
 ### More technical work
 
 - [IntegrityBench](https://github.com/triasha72/IntegrityBench) — every candidate remains blocked. A thresholded Civil Comments candidate reached 1.84% false acceptance on 97,320 held-out rows, but the frozen three-way candidate falsely allowed 59.32% of 2,802 human-annotated ToxicChat prompts.
 - [AeroSynth-Eval](https://github.com/triasha72/AeroSynth-Eval) — AGDD real-image transfer study plus 1,735 GenAI-Bench preference votes. A separate 3,224-image DLR aircraft-dent track reached 0.9777 dent recall on a 645-image test but only 0.5969 ROC-AUC because of false alarms; it remains a baseline.
 - [Equity Backtest](https://github.com/triasha72/Equity-Backtest) — expanding-window signal evaluation with real prices, turnover costs, a liquidity-based participation-cap stress test, a complete variant log, and an explicit survivorship-bias boundary.
-- [Atlanta Mobility Resilience Digital Twin](https://github.com/triasha72/atlanta-mobility-resilience-digital-twin) — checksummed OpenStreetMap disruption simulation with 50 Census tract origins from 2024 ACS estimates, representing an estimated 216,659 residents. The transfer-aware MARTA router passes its unit checks but missed its independent validation gate (75% within 15 minutes versus 80% required), so accessibility percentages remain development outputs pending new calibration and holdout evidence.
+- [Atlanta Mobility Resilience Digital Twin](https://github.com/triasha72/atlanta-mobility-resilience-digital-twin) — checksummed OpenStreetMap disruption simulation with 50 Census tract origins from 2024 ACS estimates, representing an estimated 216,659 residents. Transit accessibility percentages remain development outputs while the project follows its separate planned routing and validation path.
 - [AeroRAG-X](https://github.com/triasha72/AeroRAG-X) — evaluation-first technical retrieval over 3,233 NASA report chunks, with hybrid retrieval, reranking, evidence checks, controlled citations, and containerized services. The manual 50-case aerospace audit is still pending.
 
 ---
