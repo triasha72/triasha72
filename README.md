@@ -2,11 +2,11 @@
 
 ### Machine Learning Engineer
 
-I am an aerospace engineering MS graduate from Georgia Tech and a former Machine Learning Engineer at Rolls-Royce.
+I am a machine learning engineer with about two years of industry experience and graduate research experience in aerospace. I am an aerospace engineering MS graduate from Georgia Tech and a former Machine Learning Engineer at Rolls-Royce.
 
 I entered Georgia Tech's Aerospace Engineering PhD program, transitioned to the MS, and completed the degree in August 2026. That path sharpened my focus on applied machine learning and engineering systems.
 
-My work covers scientific ML, model evaluation, retrieval, time-series data, and ML systems. My aerospace background gave me experience with simulation, uncertainty, and engineering problems. I am targeting **Machine Learning Engineer** and **Applied ML Engineer** roles.
+My work covers scientific ML, model evaluation, retrieval, time-series data, and ML systems. I build the model and the surrounding workflow: data preparation, evaluation, APIs, and deployment checks. I am targeting **Machine Learning Engineer** and **Applied ML Engineer** roles.
 
 [Portfolio](https://triasha72.github.io/Portfolio/) ·
 [LinkedIn](https://www.linkedin.com/in/triasha-sarkar/) ·
@@ -21,7 +21,7 @@ My work covers scientific ML, model evaluation, retrieval, time-series data, and
 - Scientific ML: AIRFAANS and Surrogate Model Learning.
 - ML engineering: NewsLens, EdgeGenBench, and Equity Backtest.
 
-The repositories include the measured results, the code used to produce them, and the work that is still in progress.
+The repositories include the measured results, the code used to produce them, and the work that is still in progress. For a hiring-focused starting point, begin with NewsLens (end-to-end ML systems), AIRFAANS (scientific ML), and AeroRAG-X (retrieval and evaluation).
 
 ## Project details
 
@@ -30,7 +30,7 @@ The repositories include the measured results, the code used to produce them, an
 
 Built a geometry-aware study of aerodynamic CFD surrogates using official AirfRANS meshes. It compares a pointwise MLP, a MeshGraphNet-style GNN, and a compact point neural operator with simulation-level splits, train-only normalization, and force verification.
 
-Across three matched seeds and all 200 official interpolation test meshes, MeshGraphNet had the lowest mean error for the four predicted flow fields and drag; the point operator had the lowest mean lift error. Reynolds/AoA OOD, uncertainty, and active-learning studies are in progress; no results are reported until the matched runs finish, so the project is not presented as operationally ready.
+Across three matched seeds and all 200 official interpolation test meshes, MeshGraphNet had the lowest mean error for the four predicted flow fields and drag; the point operator had the lowest mean lift error. Six hash-verified Reynolds-OOD treatments and a two-seed scarce-data replication are complete. Angle-of-attack OOD, uncertainty calibration, active learning, and operational readiness remain open, so the project is not presented as operationally ready.
 
 ### [Surrogate Model Learning](https://github.com/triasha72/Surrogate-model-learning)
 **Engineering data · Reliability · Uncertainty quantification · Distribution shift**
@@ -47,7 +47,7 @@ Built a real-flight anomaly track on NASA DASHlink data alongside a separately l
 ### [NewsLens](https://github.com/triasha72/NewsLens)
 **Recommendation · Real-time search · Distributed systems**
 
-Built a leakage-aware news recommender with chronological evaluation, then added a separate real-time path so new articles could become searchable without tying event delivery to the model server. Go, Kafka, PostgreSQL, and FastAPI now handle keyed ingestion, idempotent writes, freshness-aware ranking, dead letters, and consumer recovery; the verified Docker run accepted all 500 events and reached a 79 ms sampled index-freshness p95. An opt-in synthetic, in-memory demo mode supports safe local exploration without licensed data or a database connection; it is not a hosted deployment.
+Built a leakage-aware news recommender with chronological evaluation, then added a separate real-time path so new articles could become searchable without tying event delivery to the model server. Go, Kafka, PostgreSQL, and FastAPI now handle keyed ingestion, idempotent writes, freshness-aware ranking, dead letters, and consumer recovery. The verified 60-minute local soak accepted 100,000 events with 0% publish failures, 224 ms freshness p95, and 3.1 s outage recovery; multi-host and online product impact remain unmeasured. An opt-in synthetic, in-memory demo mode supports safe local exploration without licensed data or a database connection.
 
 ### Other projects
 
