@@ -21,7 +21,7 @@ My work covers scientific ML, model evaluation, retrieval, time-series data, and
 - Scientific ML: AIRFAANS and Surrogate Model Learning.
 - ML engineering: NewsLens, EdgeGenBench, and Equity Backtest.
 
-The repositories include the measured results, the code used to produce them, and the work that is still in progress. For a hiring-focused starting point, begin with NewsLens (end-to-end ML systems), AIRFAANS (scientific ML), and AeroRAG-X (retrieval and evaluation).
+The repositories include the measured results, the code used to produce them, and the work that is still in progress. For a starting point, begin with NewsLens (end-to-end ML systems), AIRFAANS (scientific ML), and AeroRAG-X (retrieval and evaluation).
 
 ## Project details
 
